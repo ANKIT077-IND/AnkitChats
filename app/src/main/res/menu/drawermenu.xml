@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/setting"/>
+
+    <item android:id="@+id/Privacy"
+       android:title="Privacy Policy"
+       android:icon="@drawable/privecy"/>
+    <item android:id="@+id/info"
+        android:title="About AnkitChats"
+        android:icon="@drawable/info"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@mipmap/logout_foreground"
+        />
+
+
+
+</menu>

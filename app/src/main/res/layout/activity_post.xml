@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post">
+
+    <include layout="@layout/toolbaar"
+        android:id="@+id/posttoolbar"/>
+
+
+  <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:fillViewport="true">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/profile_image"
+              android:layout_width="60dp"
+              app:civ_border_color="@color/colorPrimary"
+              android:layout_height="60dp"
+              android:src="@drawable/profile"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              app:civ_border_width="2dp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/profile_image"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="40dp"
+              android:text="User Name"
+              android:id="@+id/username"
+              android:textColor="@color/colorPrimary"
+              android:textSize="18sp"/>
+
+          <EditText
+              android:id="@+id/status"
+              android:layout_width="match_parent"
+              android:layout_height="120dp"
+              android:gravity="top"
+              android:layout_marginTop="90dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:hint="Write something here"
+              android:paddingTop="10dp"
+              android:paddingLeft="20dp"
+              android:background="@drawable/background"
+              android:inputType="textMultiLine" />
+
+          <ImageView
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:id="@+id/image"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="230dp"
+              android:src="@drawable/image"
+              android:tint="#757070"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/image"
+              android:layout_marginTop="235dp"
+              android:layout_marginLeft="20dp"
+              android:text="Photos"
+              android:id="@+id/photos"
+              android:textSize="20dp"/>
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="250dp"
+              android:src="@drawable/ic_launcher_background"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="280dp"
+              android:id="@+id/postimage"
+              android:visibility="invisible"
+              android:layout_marginLeft="20dp"/>
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="20dp"
+              android:layout_below="@+id/postimage"
+              android:layout_marginRight="20dp"
+              android:id="@+id/Post"
+              android:text="Post"
+              android:layout_marginBottom="20dp"
+              android:textSize="20sp"
+              android:textColor="@color/colorWhite"
+              android:background="@drawable/btn_background"
+              android:textAllCaps="false"/>
+
+
+      </RelativeLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

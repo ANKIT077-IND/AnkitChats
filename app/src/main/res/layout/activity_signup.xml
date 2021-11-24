@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+   <include layout="@layout/toolbaar"
+       android:id="@+id/signuptoolbaar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/email"
+        android:hint="Enter the Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/password"
+        android:hint="Enter the Password"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/name"
+        android:hint="Enter the Name"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number:"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/mobile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background"
+        android:hint="Enter the Mobile Number"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+     <Spinner
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:theme="@style/spinner"
+         android:id="@+id/gender"/>
+
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:text="Create Account"
+     android:textAllCaps="false"
+     android:id="@+id/register"
+     android:layout_marginTop="10dp"
+     android:background="@drawable/btn_background"
+     android:textColor="@color/colorWhite"
+     android:textSize="18sp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
